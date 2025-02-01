@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+
 
 function App() {
   console.log("in app ")
@@ -11,6 +13,7 @@ function App() {
   return(
    <div>
      <Navbar/>
+     <Hero/>
    </div>)
 }
 
