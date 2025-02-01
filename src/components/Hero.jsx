@@ -9,7 +9,7 @@ export default function Hero() {
             Get Free Consultation
           </button>
         </div>
-        <img src="/Hero image.png" alt="Laptop" className="md:w-1/2 mt-6 md:mt-0" />
+        <img src="Hero image.png" alt="Laptop" className="md:w-1/2 mt-6 md:mt-0" />
       </section>
     );
   }
