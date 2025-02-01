@@ -36,9 +36,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border rounded-lg transition ${
-                activeIndex === index ? "bg-indigo-50" : "bg-white"
-              }`}
+              className={` rounded-lg transition bg-indigo-50`}
             >
               <button
                 className="w-full flex justify-between items-center text-left px-5 py-4 font-semibold text-indigo-700"
