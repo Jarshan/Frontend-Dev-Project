@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-700 text-white px-6 py-4 flex justify-between items-center relative">
+    <nav className="bg-bluish text-white px-6 py-4 flex justify-between items-center relative">
       {/* Logo */}
-      <img src="/Images/Logo.png" alt="Company Logo" className="h-10 w-auto" />
+      <img src="/Images/Logo.png" alt="Company Logo" className="h-10 w-auto " />
 
       {/* Desktop Menu (Hidden on Small Screens) */}
       <div className="hidden md:flex space-x-6">
@@ -36,7 +36,7 @@ const Navbar = () => {
 
       {/* Mobile Menu (Dropdown) */}
       {isOpen && (
-        <div className="fixed top-16 left-0 w-full bg-blue-700 text-white flex flex-col items-center space-y-4 py-6 md:hidden z-10">
+        <div className="fixed top-16 left-0 w-full bg-white text-black flex flex-col pl-10 space-y-4 py-6 md:hidden z-10 h-full gap-y-10 font-semibold">
           <a href="#" className="hover:underline" onClick={toggleMenu}>
             Services
           </a>

@@ -28,7 +28,7 @@ const FAQ = () => {
   return (
     <section className="py-12 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold mb-6 text-center text-indigo-600">
+        <h2 className="text-2xl font-bold mb-6 text-center text-bluish">
           Frequently asked questions
         </h2>
 
@@ -36,21 +36,21 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={` rounded-lg transition bg-indigo-50`}
+              className={` rounded-lg transition bg-Gray`}
             >
               <button
-                className="w-full flex justify-between items-center text-left px-5 py-4 font-semibold text-indigo-700"
+                className="w-full flex justify-between items-center text-left px-5 py-4 font-semibold text-bluish"
                 onClick={() => toggleFAQ(index)}
               >
                 <span
                   className={`${
-                    activeIndex === index ? "text-indigo-800" : "text-gray-900"
+                    activeIndex === index ? "text-bluish" : "text-gray-900"
                   }`}
                 >
                   {faq.question}
                 </span>
                 {activeIndex === index ? (
-                  <FaMinus className="text-indigo-600" />
+                  <FaMinus className="text-bluish" />
                 ) : (
                   <FaPlus className="text-gray-500" />
                 )}

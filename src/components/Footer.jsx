@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-      <footer className="bg-blue-600 text-white p-6">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items">
-          <div className="md:w-1/3">
+      <footer className="bg-bluish text-white p-6 ">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items ">
+          <div className="md:w-1/3 ">
 
         <img src="/Images/Logo.png" alt="Company Logo" className="h-10 w-auto b" />
             <p className="text-sm mt-2">
@@ -13,7 +13,9 @@ export default function Footer() {
             </p>
           </div>
   
-          <div className="md:w-1/3 mt-6 md:mt-0 ">
+        <div className="flex flex-col md:flex-row">
+            
+          <div className="md:min-w-60 mt-6 md:mt-0  mr-10">
             <h3 className="text-lg font-semibold">Our Technologies</h3>
             <ul className="mt-2 space-y-1">
               <li>ReactJS</li>
@@ -23,7 +25,7 @@ export default function Footer() {
             </ul>
           </div>
   
-          <div className="md:w-1/3 mt-6 md:mt-0">
+          <div className="md:min-w-60 mt-6 md:mt-0 ">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="mt-2 space-y-1">
               <li>Social Media Marketing</li>
@@ -31,6 +33,7 @@ export default function Footer() {
               <li>Data & Analytics</li>
             </ul>
           </div>
+        </div>
         </div>
   
         <hr className="border-white mt-6" />
